@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Countdown</name>
+    <author>Kristian Valentin</author>
+    <creationDate>November 2015</creationDate>
+    <version>1.0.0</version>
+    <description>Displays the remaining number of days and hours until the specified date.</description>
+    <licence>MIT</licence>
+    <files>
+        <filename>mod_countdown.xml</filename>
+        <filename module="mod_countdown">mod_countdown.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="title" type="text" default=""  />
+                <field name="date" type="calendar" format="%Y-%m-%d" label="Select a date" />
+            </fieldset>
+       </fields>
+    </config>
+
+</extension>
