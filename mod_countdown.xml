@@ -4,7 +4,7 @@
     <author>Kristian Valentin</author>
     <creationDate>November 2015</creationDate>
     <version>1.0.0</version>
-    <description>Displays the remaining number of days and hours until the specified date.</description>
+    <description>Displays the remaining number of days and hours until the specified datetime.</description>
     <licence>MIT</licence>
     <files>
         <filename>mod_countdown.xml</filename>
@@ -17,7 +17,7 @@
         <fields name="params">
             <fieldset name="basic">
                 <field name="title" type="text" default=""  />
-                <field name="date" type="calendar" format="%Y-%m-%d" label="Select a date" />
+                <field name="datetime" type="calendar" format="%Y-%m-%d %H:%M" label="Select a date and time" />
             </fieldset>
        </fields>
     </config>
